@@ -1,2 +1,2 @@
 # personalPortfolioSite
- First from scratch website, HTML, CSS and additional files included. Designed to showcase myself and have a place to host projects
+ First from scratch website, HTML, CSS and additional files included. Designed to showcase myself and have a place to host projects. Currently in development, plan to publish soon.
