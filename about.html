@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tom Butler | About Me</title>
-    <link rel="stylesheet icon" href="/images/tbLogo.png">
+    <title>Tom Butler | About</title>
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -19,17 +19,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- css -->
     <link rel="stylesheet" href="style.css">
-
-
 </head>
 
 <body>
-
     <!-- Nav Bar -->
 
     <nav class="navbar navbar-expand-lg sticky-top navbar-dark">
         <div class="container-fluid">
-            <img src="/images/tbLogo.png" alt="" id="logo">
+            <img src="/images/tbLogo2.png" alt="" id="logo">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
                 aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon" id="collapseButton"></span>
@@ -38,10 +35,10 @@
                 <div class="container-fluid" id="topBarItems">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="/index.html" class="nav-link" id="navDormant">Home</a>
+                            <a href="/index.html" class="nav-link" id="navCurrent">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/about.html" class="nav-link" id="navCurrent">About Me</a>
+                            <a href="/about.html" class="nav-link" id="navDormant">About Me</a>
                         </li>
                         <li class="nav-item">
                             <a href="/portfolio.html" class="nav-link" id="navDormant">Portfolio</a>
@@ -56,109 +53,53 @@
     </nav>
 
 
+    <!-- Main Header -->
 
-    <!-- Main body content -->
-
-    <section class="container" id="aboutMainBody">
-        <div class="row" id="topAboutRow">
-            <div class="col-lg-4">
-                <img src="https://www.rgbc.com/wp-content/uploads/2018/03/Headshot-Placeholder-1.png"
-                    class="d-block w-100" alt="">
-            </div>
-            <div class="col-lg-8">
-                <h2 class="aboutHeaders" style="text-align: center;">Who am I</h2>
-                <p class="aboutText">I am originally from Seattle, WA where
-                    I attended University Preparatory Academy highschool from 2012-2016. Now, I am located in
-                    Los Angeles, CA where I am a senior at Occidental College and will graduate in May of 2021. I
-                    grew up immersed in amateur athletics playing basketball and baseball through highschool and
-                    continued to play and coach collegiate baseball at Occidental College. My hobbies include, cooking,
-                    biking, surfing and teaching myself new skills.</p>
-
+    <div class="container">
+        <div class="row">
+            <div class="container aboutBanner">
+                <h1>About Me</h1>
+                <h4>A snapshot of who I am and what I do</h4>
+                <h4>Connect with me</h4>
             </div>
         </div>
-
-        <hr>
-
-        <div class="row">
-            <div class="col-lg-7">
-                <h2 class="aboutHeaders" style="text-align: center;">Education</h2>
-                <p class="aboutText"> I attend Occidental College in Los Angeles, CA where I am pursuing my Bachelor of
-                    Arts, double majoring in Mathematics and Kinesiology. I am a four year deans list appearant, and
-                    have been a two year kinesiology department ambassador.</p>
-
+        <div class="row aboutSnapshot">
+            <div class="col-xl-6">
+                Picture will go Here
             </div>
-            <div class="col-lg-5">
-                <img src="/images/oxycampus.jpg" class="d-block w-100" alt="">
-            </div>
-        </div>
-
-        <hr>
-
-        <div class="row">
-            <div class="col-lg-5">
-                <img src="/images/pexels-lukas-work.jpg" class="d-lg-block w-100 d-none" alt="">
-            </div>
-
-            <div class="col-lg-7">
-                <h2 class="aboutHeaders" style="text-align: center;">Work Experience</h2>
-                <p class="aboutText">I currently work as an Operations Research Intern for SportsID inc. a sports
-                    technology start-up based out of Atlanta, GA. I also have four years of experience in being a
-                    teachers assistant and private tutor, having worked closely with professors to deliver efficient
-                    learning environments
-                    in courses such as Linear Algebra, Partial Differential Equations, Human Anatomy and Biomechanics.
-                </p>
-
-            </div>
-        </div>
-
-        <hr>
-
-        <div class="row">
-
-            <div class="col-lg-7">
-                <h2 class="aboutHeaders" style="text-align: center;">Athletic Career</h2>
-                <p class="aboutText">Four year member (2016-2020) of the Occidental College varsity baseball team. Two
-                    year releif
-                    pitcher and two year starting pitcher, logging a career 115 innings pitched with a 3.67 ERA. Served
-                    as team captain for the 2019-2020 season and assistant pitching coach for the 2020-2021 season.</p>
-
-            </div>
-
-            <div class="col-lg-5">
-                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="/images/pitching1.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/images/pitching2.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/images/pitching3.jpg" class="d-block w-100" alt="...">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </a>
+            <div class="aboutInfo col-xl-5">
+                <div class="aboutEntry">
+                    <h1>Tom Butler</h1>
+                    <h4>Student</h4>
+                </div>
+                <div class="aboutEntry">
+                    <h2> <i class="fa fa-map-marker"></i> Location</h2>
+                    <p>Los Angeles, CA</p>
+                </div>
+                <div class="aboutEntry">
+                    <h2><i class="fa fa-graduation-cap"></i> Education</h2>
+                    <p>Occidental College: BA Mathematics, BA Kinesiology (2016-2021)</p>
+                    <p>Focus of Studies: Applied and Computational Mathematics, Biomechanics</p>
+                    <p>Extracurricular: Varsity Baseball (2016-2020), Assistant Baseball Coach (2021)</p>
+                </div>
+                <div class="aboutEntry">
+                    <h2><i class="fa fa-briefcase"></i> Work Experience</h2>
+                    <p>Operations Research Intern</p>
+                    <p>Mathematics TA (Linear Algebra, Partial Differential Equations)</p>
+                    <p>Human Anatomy and Biomechanics Tutor</p>
+                </div>
+                <div class="aboutEntry">
+                    <h2><i class="fa fa-desktop"></i> Hobbies</h2>
+                    <p>Basketball, Baseball, Surfing, Running, Gaming</p>
+                </div>
+                <div class="row resumeButtonRow">
+                    <a href="/pdfs/Tom_s_Resume.pdf" class="btn btn-lg" id="aboutResumeButton" onclick="this.blur();"
+                        download="Tom Butler Resume"><span class="fa fa-file"></span> Full Resume</a>
                 </div>
             </div>
+
         </div>
-
-        <hr>
-
-        <div class="row" id="bottombtnrow">
-            <a href="/portfolio.html" class="btn btn-lg" id="nextPageBtn">Go to my portfolio <i
-                    class="fa fa-arrow-right"></i></a>
-        </div>
-
-    </section>
-
-
+    </div>
 
     <!-- social media/linked in connect and bottom nav -->
 
@@ -172,8 +113,8 @@
                                 class="fa fa-facebook fa-xx" id="bottomNavfb"></i></a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/tom_butler23/" class="social-icon"><i
-                                class="fa fa-instagram" id="bottomNavIg"></i></a>
+                        <a href="https://www.instagram.com/tom_butler23/" class="social-icon"><i class="fa fa-instagram"
+                                id="bottomNavIg"></i></a>
                     </li>
                     <li>
                         <a href="https://www.linkedin.com/in/tom-butler1/" class="social-icon"><i class="fa fa-linkedin"
@@ -184,7 +125,8 @@
                                 id="bottomNavGit"></i></a>
                     </li>
                     <li>
-                        <a href="mailto:tombutler368@gmail.com" class="social-icon"><i class="fa fa-envelope" id="bottomNavEmail"></i></a>
+                        <a href="mailto:tombutler368@gmail.com" class="social-icon"><i class="fa fa-envelope"
+                                id="bottomNavEmail"></i></a>
                     </li>
                 </ul>
             </div>
@@ -193,8 +135,9 @@
 
     <!-- bottom nav with info of who made website -->
     <footer>
-        Website made by Tom Butler | Icons from Font Awesome | Hope you enjoy!
+        <span>Website made by Tom Butler | Icons from Font Awesome | Hope you enjoy!</span>
     </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"

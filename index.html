@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tom Butler | Home</title>
-    <link rel="stylesheet icon" href="/images/tbLogo.png">
+    <link rel="stylesheet icon" href="/images/tbLogo2.png">
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -26,7 +26,7 @@
 
     <nav class="navbar navbar-expand-lg sticky-top navbar-dark">
         <div class="container-fluid">
-            <img src="/images/tbLogo.png" alt="" id="logo">
+            <img src="/images/tbLogo2.png" alt="" id="logo">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
                 aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon" id="collapseButton"></span>
@@ -56,32 +56,35 @@
 
     <!-- name and short intro on left, picture on right -->
 
-    <section class="container-fluid">
-        <div class="row" id="banner">
-            <div class="col-lg-7" id="home-left">
-                <h1>Hi, Im Tom Butler</h1>
+    <section class="container-fluid" id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7" id="home-left">
+                    <h1>Tom Butler</h1>
 
-                <h3 class="adjective">Self Taught Programmer</h3>
-                <h3 class="adjective">Mathematician</h3>
-                <h3 class="adjective">Kinesiologist</h3>
+                    <h3 class="adjective">Self Taught Programmer</h3>
+                    <h3 class="adjective">Mathematician</h3>
+                    <h3 class="adjective">Kinesiologist</h3>
 
 
-                <a href="/pdfs/Tom_s_Resume.pdf" class="btn btn-lg" id="resumeButton" onclick="this.blur();" download="Tom Butler Resume"><span
-                        class="fa fa-file"></span> Download Resume</a>
+                    <a href="/pdfs/Tom_s_Resume.pdf" class="btn btn-lg" id="resumeButton" onclick="this.blur();"
+                        download="Tom Butler Resume"><span class="fa fa-file"></span> Download Resume</a>
 
-            </div>
-            <div class="col-lg-5" id="home-right">
-                <img src="https://www.rgbc.com/wp-content/uploads/2018/03/Headshot-Placeholder-1.png" id="headshot"
-                    alt="">
-                <div class="container-fluid imgInfo">
-                    <ul class="proInfoList">
-                        <li class="proInfo" id="imgLocation"> <a href="" class="btn"><i class="fa fa-map-marker"></i>
-                                Los Angeles, CA</a></li>
-                        <li class="proInfo" id="imgGit"> <a href="https://github.com/tombutler36" class="btn"><i
-                                    class="fa fa-github"></i> GitHub</a></li>
-                        <li class="proInfo" id="imgLinkd"> <a href="https://www.linkedin.com/in/tom-butler1/"
-                                class="btn"> <i class="fa fa-linkedin"></i> LinkedIn</a></li>
-                    </ul>
+                </div>
+                <div class="col-lg-5" id="home-right">
+                    <img src="https://www.rgbc.com/wp-content/uploads/2018/03/Headshot-Placeholder-1.png" id="headshot"
+                        alt="">
+                    <div class="container-fluid imgInfo">
+                        <ul class="proInfoList">
+                            <li class="proInfo" id="imgLocation"> <a href="" class="btn"><i
+                                        class="fa fa-map-marker"></i>
+                                    Los Angeles, CA</a></li>
+                            <li class="proInfo" id="imgGit"> <a href="https://github.com/tombutler36" class="btn"><i
+                                        class="fa fa-github"></i> GitHub</a></li>
+                            <li class="proInfo" id="imgLinkd"> <a href="https://www.linkedin.com/in/tom-butler1/"
+                                    class="btn"> <i class="fa fa-linkedin"></i> LinkedIn</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -89,43 +92,117 @@
 
 
     <!-- highlight background -->
-
-    <section class="container">
-        <div class="row align-items-center" id="highlights">
-            <div class="col-xl-4 align-self-start">
-                <h3><span><i class="fa fa-calculator"></i></span>Mathematics</h3>
-                <hr>
-                <p class="highlightText">I am pursuing my BA in Mathematics at Occidental College. I am fascinated how
-                    math surrounds us in
-                    everything we do, especially in the intersection to computer science. My coursework is focused in
-                    applied and computational mathematics. Additionally, I
-                    TA
-                    for the linear algebra and partial differential courses and privately tutor.</p>
-            </div>
-            <div class="col-xl-4 align-self-start">
-                <h3><span><i class="fa fa-database"></i></span>Data Science</h3>
-                <hr>
-                <p class="highlightText">I want to continue building my mathematical and computational acumen by
-                    pursuing a career in the
-                    field of data science. Processing, interpreting and communicating data correctly can influence big
-                    business decisions. I plan to eventually pursue a graduate degree in this subject.</p>
-            </div>
-            <div class="col-xl-4 align-self-start">
-                <h3><span><i class="fa fa-heart"></i></span>Health & Fitness</h3>
-                <hr>
-                <p class="highlightText">In addition to Mathematics, I am also a double major in Kinesiology. Being a
-                    former student athlete,
-                    I was drawn to the subject based on how applicable it was to my life. I am intrigued by the inner
-                    workings of the human body and have a deep knowledge of biomechancis, human anatomy and physiology.
-                </p>
+    <div class="container" id="backgroundInfo">
+        <div class="container">
+            <div class="row align-items-center" id="highlightHeading">
+                <h1>Background</h1>
             </div>
         </div>
-    </section>
+
+        <section class="container">
+            <div class="row display-flex align-items-center" id="highlights">
+                <div class="highlightInfo col-xl-3 align-self-start">
+                    <h3><span><i class="fa fa-calculator"></i></span>Mathematics</h3>
+                    <hr>
+                    <p class="highlightText">I am pursuing my Bachelor of Arts in Mathematics at Occidental College. I
+                        am fascinated
+                        how
+                        math surrounds us in
+                        everything we do, especially in the intersection to computer science. My coursework is focused
+                        in
+                        applied and computational mathematics.</p>
+                </div>
+                <div class="highlightInfo col-xl-3 align-self-start">
+                    <h3><span><i class="fa fa-database"></i></span>Data Science</h3>
+                    <hr>
+                    <p class="highlightText">I want to continue building my mathematical and computational acumen by
+                        pursuing a career in the
+                        field of data science. Processing, interpreting and communicating data correctly can influence
+                        big
+                        business decisions. I plan to eventually pursue a graduate degree in this subject.</p>
+                </div>
+                <div class="highlightInfo col-xl-3 align-self-start">
+                    <h3><span><i class="fa fa-heart"></i></span>Health & Fitness</h3>
+                    <hr>
+                    <p class="highlightText">In addition to Mathematics, I am also a double major in Kinesiology. Being
+                        a
+                        former student athlete,
+                        I was drawn to the subject based on how applicable it was to my life. I am intrigued by the
+                        inner
+                        workings of the human body and have a deep knowledge of biomechancis, human anatomy and
+                        physiology.
+                    </p>
+                </div>
+            </div>
+        </section>
 
 
-    <div class="row" id="bottombtnrow">
-        <a href="/about.html" class="btn btn-lg" id="nextPageBtn">Learn More <i class="fa fa-arrow-right"></i></a>
+        <div class="row" id="bottombtnrow">
+            <a href="/about.html" class="btn btn-lg" id="nextPageBtn">Learn More <i
+                    class="fa fa-arrow-right"></i></a>
+        </div>
     </div>
+
+
+    <div class="container-fluid" id="projectHighlights">
+        <div class="container">
+            <div class="row align-items-center" id="highlightHeading">
+                <h1>Project Highlights</h1>
+            </div>
+        </div>
+
+        <section class="container">
+            <div class="row display-flex align-items-center" id="highlights">
+                <div class="highlightInfo col-xl-5 align-self-start">
+                    <h3>"Optimized Conversion of Categorical and Numerical Features in Machine
+                        Learning Models"</h3>
+                    <hr>
+                    <p class="highlightText">While some data have an explicit, numerical form, many other data,
+                        such as gender or nationality, do not typically use numbers and are referred to as categorical
+                        data. Thus, machine learning algorithms need a way of representing categorical information
+                        numerically in order to be able to analyze them. Our project specifically focuses on optimizing
+                        the conversion of categorical features to a numerical form in order to maximize the
+                        effectiveness of various machine learning models. Of the methods we used, we found that Wide &
+                        Deep is the most effective model for datasets that contain high-cardinality features, as opposed
+                        to learned embedding and one-hot encoding.
+                    </p>
+                    <span class="highlightProjectLinks" id="firstHighlight"> <a class="highlightLinkPDF"
+                            href="/pdfs/PIC Math 2020 Research Paper.pdf"><i class="fa fa-file"></i> PDF</a>
+                        <a class="highlightLinkGIT" href="https://github.com/tombutler36/categoricalEncoding"> <i
+                                class="fa fa-github"></i> Github</a>
+                    </span>
+                </div>
+                <div class="highlightInfo col-xl-5 align-self-start">
+                    <h3>"Utilizing Mathematical Modeling Techniques to Optimize
+                        Athletic Footwear for Sports Performance"</h3>
+                    <hr>
+                    <p class="highlightText">This paper will analyze the application of mathematical models onto
+                        biomechanical systems, specifically running gait mechanics and the foot/ground interaction, as
+                        well as its application to long distance running footwear and sports performance. A literature
+                        review was conducted by collecting research articles through Science Direct, Web of Science and
+                        Pub Med. The purpose of this research was to highlight the process of mathematical modeling and
+                        how it can be applied to human dynamics to improve performance. Multiple models are analyzed
+                        that incorporate different aspects of gait mechanics, including simulating dampening of shoes
+                        and the spring like effect of the arch of the foot and the metatarsophalangeal joint. Many
+                        breakthroughs have already been made in this field, but what this paper brings is the connection
+                        between the theory and the application and how these models can show which factors influence
+                        performance the most. What is concluded is that these highlighted factors do lead to improved
+                        sports performance specifically when looking at the Nike Vaporfly 4% running shoe and both men’s
+                        and women’s world record marathon time.
+                    </p>
+                    <span class="highlightProjectLinks"><a class="highlightLinkPDF"
+                            href="/pdfs/Oxy Kinesiology Comprehensive Paper.pdf"><i class="fa fa-file"></i>
+                            PDF</a></span>
+                </div>
+            </div>
+        </section>
+        <div class="row" id="bottombtnrow">
+            <a href="/portfolio.html" class="btn btn-lg" id="nextPageBtn">See My Portfolio <i
+                    class="fa fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+
 
     <!-- social media/linked in connect and bottom nav -->
 
@@ -139,8 +216,8 @@
                                 class="fa fa-facebook fa-xx" id="bottomNavfb"></i></a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/tom_butler23/" class="social-icon"><i
-                                class="fa fa-instagram" id="bottomNavIg"></i></a>
+                        <a href="https://www.instagram.com/tom_butler23/" class="social-icon"><i class="fa fa-instagram"
+                                id="bottomNavIg"></i></a>
                     </li>
                     <li>
                         <a href="https://www.linkedin.com/in/tom-butler1/" class="social-icon"><i class="fa fa-linkedin"
@@ -151,7 +228,8 @@
                                 id="bottomNavGit"></i></a>
                     </li>
                     <li>
-                        <a href="mailto:tombutler368@gmail.com" class="social-icon"><i class="fa fa-envelope" id="bottomNavEmail"></i></a>
+                        <a href="mailto:tombutler368@gmail.com" class="social-icon"><i class="fa fa-envelope"
+                                id="bottomNavEmail"></i></a>
                     </li>
                 </ul>
             </div>
