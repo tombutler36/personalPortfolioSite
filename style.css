@@ -839,8 +839,9 @@ body{
 }
 
 #bottomNavfb{
-    padding: 10px 12px;
+    padding: 10px 15px;
     transition: 400ms;
+    border-radius: 50%;
 }
 
 #bottomNavfb:hover{
@@ -854,6 +855,7 @@ body{
 #bottomNavIg{
     padding: 10px 12px;
     transition: 400ms;
+    border-radius: 50%;
 }
 
 #bottomNavIg:hover{
@@ -867,6 +869,7 @@ body{
 #bottomNavLinkd{
     padding: 10px 12px;
     transition: 400ms;
+    border-radius: 50%;
 }
 
 #bottomNavLinkd:hover{
@@ -880,6 +883,7 @@ body{
 #bottomNavGit{
     padding: 10px 12px;
     transition: 400ms;
+    border-radius: 50%;
 }
 
 #bottomNavGit:hover{
@@ -892,8 +896,9 @@ body{
 }
 
 #bottomNavEmail{
-    padding: 10px 12px;
+    padding: 10px 10px;
     transition: 400ms;
+    border-radius: 50%;
 }
 
 #bottomNavEmail:hover{
