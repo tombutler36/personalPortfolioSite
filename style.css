@@ -194,16 +194,156 @@ body{
 }
 
 
+/* load animations */
+
+.animated{
+    animation-duration: 2.5s;
+    animation-timing-function: cubic-bezier(0.2,-2,0.8,2);
+    -webkit-animation-timing-function: cubic-bezier(0.2,-2,0.8,2);;
+    animation-fill-mode: both;
+}
+
+.animatedDelay1{
+    animation-delay: 1.5s;
+}
+
+.animatedDelay2{
+    animation-delay: 2s;
+}
+
+.animatedDelay3{
+    animation-delay: 2.5s;
+}
+
+.animatedDelay4{
+    animation-delay: 3.5s;
+}
+
+.animatedDelay5{
+    animation-delay: 4s;
+}
+
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+.fadeIn{
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeDown {
+    0% {
+        opacity: 0;
+        margin-bottom: 100%;
+    }
+
+    100%{
+        opacity: 1;
+        margin-bottom: 0%;
+    }
+}
+
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        margin-bottom: 100%;
+    }
+
+    100%{
+        opacity: 1;
+        margin-bottom: 0%;
+    }
+}
+
+.fadeDown{
+    -webkit-animation-name: fadeDown;
+    animation-name: fadeDown;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes leftToRight{
+    0%{
+        translate: -1000px 600px;
+        opacity: 0;
+    }
+    100%{
+        translate: 0px 0px;
+        opacity: 1;
+    }
+}
+
+
+@keyframes leftToRight{
+    0%{
+        top: 500px;
+        opacity: 0;
+    }
+    100%{
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+.leftToRight{
+    animation-name: leftToRight;
+    animation-timing-function: ease-out;
+    -webkit-animation-name: leftToRight;
+    -webkit-animation-timing-function: ease-out;
+}
+
+
+@-webkit-keyframes dropDown{
+    0%{
+        top: -500px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+
+
+@keyframes dropDown{
+    0%{
+        top: -500px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+
+.dropDown{
+    animation-name: dropDown;
+    animation-timing-function: ease-out;
+    -webkit-animation-name: dropDown;
+    -webkit-animation-timing-function: ease-out;
+}
+
+@keyframes underlineHeader{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 50%;
+    }
+}
+
 
 /* home content style */
 
 /* main content style */
 
 #banner{
-    /* background-image: url(/images/laskyline.jpg);
-    background-attachment: fixed;
-    background-position: center top;
-    background-size: cover; */
     background-color: white;
     overflow: hidden;
 }
@@ -225,28 +365,27 @@ body{
     
 }
 
-#home-left h1{
+#bannerName{
     font-weight: bold;
     font-size: 5rem;
     margin-bottom: 1.5rem;
     color: black;
-    /* text-shadow: 2px 2px 5px black; */
     
 }
+
+
 
 .adjective{
     font-size: 1.7rem;
     line-height: 1.2;
     margin-bottom: 0.5rem;
     color: black;
-    /* text-shadow: 1.5px 1.5px 3px black; */
 }
 
 #resumeButton{
     background-color: none;
     color: var(--accentColor);
     font-size: 1.5rem;
-    /* text-shadow: 2px 2px 5px black; */
     text-decoration: none;
     padding: 0.5em 1em;
     border: 2px solid var(--accentColor);
@@ -262,9 +401,9 @@ body{
 
 
 
-#home-left a:hover, #nextPageBtn:hover{
+#resumeButton:hover, #nextPageBtn:hover{
 
-    box-shadow: 0 0.5em 0.5em -0.4em black;
+    box-shadow: 2px 7px 16px 6px rgba(0,0,0,0.09);
 }
 
 #nextPageBtn:hover{
@@ -272,7 +411,7 @@ body{
     color: white;
 }
 
-#home-left a:focus, #portfoliobtn:focus{
+#resumeButton:focus, #portfoliobtn:focus{
     background-color: #c76051;
     border: none;
     outline: none;
@@ -378,12 +517,18 @@ body{
         margin-bottom: -450px;
     }
 
-    #home-left h1:after{
+    #bannerName:after{
         content: '';
         display: block;
-        width: 50%;
+        width: 0%;
         height: 8px;
         background: linear-gradient(90deg, rgba(226,109,92,1) 0%, rgba(226,109,92,1) 49%, rgba(255,255,255,1) 100%);;
+        animation: underlineHeader;
+        animation-fill-mode: forwards;
+        animation-delay: 7s;
+        animation-duration: 1s;
+        
+
     }
 }
 
@@ -597,6 +742,11 @@ body{
     margin-bottom: 5rem;
 }
 
+#aboutHeadshot{
+    width: 100%;
+    height: auto;
+}
+
 .aboutInfo{
     background-color: rgb(247, 247, 247);
     box-shadow: 2px 7px 16px 6px rgba(0,0,0,0.09);
@@ -639,15 +789,19 @@ body{
 }
 
 #aboutResumeButton{
-    background-color: var(--accentColor);
-    color: #fbfefb;
+    background-color: none;
+    color: black;
+    border: 2px solid black;
     font-size: 1.5rem;
-    text-shadow: 2px 2px 5px black;
     text-decoration: none;
-    padding: 0.5em 1em;
-    border-radius: 10px;
-    margin-top: 1rem;
-    width: 20rem;
+}
+
+#aboutResumeButton:hover{
+    background-color: var(--accentColor);
+    border: 2px solid var(--accentColor);
+    color: white;
+    box-shadow: 2px 7px 16px 6px rgba(0,0,0,0.09);
+
 }
 
 

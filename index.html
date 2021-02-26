@@ -24,7 +24,7 @@
 <body>
     <!-- Nav Bar -->
 
-    <nav class="navbar navbar-expand-lg sticky-top navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark animated dropDown animatedDelay4">
         <div class="container-fluid">
             <img src="/images/tbLogo2.png" alt="" id="logo">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
@@ -59,23 +59,22 @@
     <section class="container-fluid" id="banner">
         <div class="container" id="heightAdjust">
             <div class="row" id="frontPageBanner">
-                <div class="backgroundLines" id="bg1"> </div>
+                <div class="backgroundLines animated leftToRight animatedDelay5" id="bg1"> </div>
                 <div class="col-lg-7" id="home-left">
-                    <h1>Tom Butler</h1>
+                    <h1 id="bannerName" class="animated fadeIn">Tom Butler</h1>
 
-                    <h3 class="adjective">Self Taught Programmer</h3>
-                    <h3 class="adjective">Mathematician</h3>
-                    <h3 class="adjective">Kinesiologist</h3>
+                    <h3 class="adjective animated fadeIn animatedDelay1">Self Taught Programmer</h3>
+                    <h3 class="adjective animated fadeIn animatedDelay2">Mathematician</h3>
+                    <h3 class="adjective animated fadeIn animatedDelay3">Kinesiologist</h3>
 
 
-                    <a href="/pdfs/Tom Butler Resume.pdf" class="btn btn-lg" id="resumeButton" onclick="this.blur();"
+                    <a href="/pdfs/Tom Butler Resume.pdf" class="btn btn-lg animated fadeIn animatedDelay4" id="resumeButton" onclick="this.blur();"
                         download="Tom Butler Resume"><span class="fa fa-file"></span> Download Resume</a>
 
                 </div>
                 <div class="col-lg-5" id="home-right">
-                    <img src="/images/personal pic no background.png" id="headshot"
-                        alt="">
-                    <div class="container-fluid imgInfo">
+                    <img src="/images/personal pic no background.png" id="headshot" alt="" class="animated fadeDown fadeIn animatedDelay1">
+                    <div class="container-fluid imgInfo animated fadeIn animatedDelay5">
                         <ul class="proInfoList">
                             <li class="proInfo" id="imgLocation"> <a href="" class="btn"><i
                                         class="fa fa-map-marker"></i>
@@ -87,7 +86,7 @@
                         </ul>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -140,8 +139,7 @@
 
 
         <div class="row" id="bottombtnrow">
-            <a href="/about.html" class="btn btn-lg" id="nextPageBtn">Learn More <i
-                    class="fa fa-arrow-right"></i></a>
+            <a href="/about.html" class="btn btn-lg" id="nextPageBtn">Learn More <i class="fa fa-arrow-right"></i></a>
         </div>
     </div>
 
@@ -242,7 +240,6 @@
     <footer>
         <span>Website made by Tom Butler | Icons from Font Awesome | Hope you enjoy!</span>
     </footer>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
