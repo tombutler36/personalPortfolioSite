@@ -24,7 +24,7 @@
 <body>
     <!-- Nav Bar -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark animated dropDown animatedDelay4">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="navBar">
         <div class="container-fluid">
             <img src="/images/tbLogo2.png" alt="" id="logo">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
@@ -35,16 +35,16 @@
                 <div class="container-fluid" id="topBarItems">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="/index.html" class="nav-link" id="navCurrent">Home</a>
+                            <a href="#banner" class="nav-link" id="navDormant">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/about.html" class="nav-link" id="navDormant">About Me</a>
+                            <a href="#aboutMe" class="nav-link" id="navDormant">About Me</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/portfolio.html" class="nav-link" id="navDormant">Portfolio</a>
+                            <a href="#portfolioPage" class="nav-link" id="navDormant">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/contact.html" class="nav-link" id="navDormant">Contact Me</a>
+                            <a href="#contactMe" class="nav-link" id="navDormant">Contact Me</a>
                         </li>
                     </ul>
                 </div>
@@ -59,22 +59,22 @@
     <section class="container-fluid" id="banner">
         <div class="container" id="heightAdjust">
             <div class="row" id="frontPageBanner">
-                <div class="backgroundLines animated leftToRight animatedDelay5" id="bg1"> </div>
+                <div class="backgroundLines" id="bg1"> </div>
                 <div class="col-lg-7" id="home-left">
-                    <h1 id="bannerName" class="animated fadeIn">Tom Butler</h1>
+                    <h1 id="bannerName" class="">Tom Butler</h1>
 
-                    <h3 class="adjective animated fadeIn animatedDelay1">Self Taught Programmer</h3>
-                    <h3 class="adjective animated fadeIn animatedDelay2">Mathematician</h3>
-                    <h3 class="adjective animated fadeIn animatedDelay3">Kinesiologist</h3>
+                    <h3 class="adjective" id="adj1">Self Taught Programmer</h3>
+                    <h3 class="adjective" id="adj2">Mathematician</h3>
+                    <h3 class="adjective" id="adj3">Kinesiologist</h3>
 
 
-                    <a href="/pdfs/Tom Butler Resume.pdf" class="btn btn-lg animated fadeIn animatedDelay4" id="resumeButton" onclick="this.blur();"
+                    <a href="/pdfs/Tom Butler Resume.pdf" class="btn btn-lg " id="resumeButton" onclick="this.blur();"
                         download="Tom Butler Resume"><span class="fa fa-file"></span> Download Resume</a>
 
                 </div>
                 <div class="col-lg-5" id="home-right">
-                    <img src="/images/personal pic no background.png" id="headshot" alt="" class="animated fadeDown fadeIn animatedDelay1">
-                    <div class="container-fluid imgInfo animated fadeIn animatedDelay5">
+                    <img src="/images/personal pic no background.png" id="headshot" alt="" class="">
+                    <div class="container-fluid imgInfo " id="headshotSocialLinks">
                         <ul class="proInfoList">
                             <li class="proInfo" id="imgLocation"> <a href="" class="btn"><i
                                         class="fa fa-map-marker"></i>
@@ -93,116 +93,681 @@
 
 
     <!-- highlight background -->
-    <div class="container" id="backgroundInfo">
-        <div class="container">
-            <div class="row align-items-center" id="highlightHeading">
-                <h1>Background</h1>
+    <div class="container-fluid" id="mainBody">
+        <div class="container" id="backgroundInfo">
+            <div class="container">
+                <div class="row align-items-center subHeadingLine">
+                    <h1>Background</h1>
+                </div>
+            </div>
+
+            <section class="container">
+                <div class="row display-flex align-items-center" id="highlights">
+                    <div class="highlightInfo col-xl-3 align-self-start">
+                        <h3><span><i class="fa fa-calculator"></i></span>Mathematics</h3>
+                        <hr>
+                        <p class="highlightText">I am pursuing my Bachelor of Arts in Mathematics at Occidental College.
+                            I
+                            am fascinated
+                            how
+                            math surrounds us in
+                            everything we do, especially in the intersection to computer science. My coursework is
+                            focused
+                            in
+                            applied and computational mathematics.</p>
+                    </div>
+                    <div class="highlightInfo col-xl-3 align-self-start">
+                        <h3><span><i class="fa fa-database"></i></span>Data Science</h3>
+                        <hr>
+                        <p class="highlightText">I want to continue building my mathematical and computational acumen by
+                            pursuing a career in the
+                            field of data science. Processing, interpreting and communicating data correctly can
+                            influence
+                            big
+                            business decisions. I plan to eventually pursue a graduate degree in this subject.</p>
+                    </div>
+                    <div class="highlightInfo col-xl-3 align-self-start">
+                        <h3><span><i class="fa fa-heart"></i></span>Health & Fitness</h3>
+                        <hr>
+                        <p class="highlightText">In addition to Mathematics, I am also a double major in Kinesiology.
+                            Being
+                            a
+                            former student athlete,
+                            I was drawn to the subject based on how applicable it was to my life. I am intrigued by the
+                            inner
+                            workings of the human body and have a deep knowledge of biomechancis, human anatomy and
+                            physiology.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+
+            <div class="row" id="bottombtnrow">
+                <a href="#aboutMe" class="btn btn-lg" id="nextPageBtn">Learn More <i class="fa fa-arrow-right"></i></a>
             </div>
         </div>
 
-        <section class="container">
-            <div class="row display-flex align-items-center" id="highlights">
-                <div class="highlightInfo col-xl-3 align-self-start">
-                    <h3><span><i class="fa fa-calculator"></i></span>Mathematics</h3>
-                    <hr>
-                    <p class="highlightText">I am pursuing my Bachelor of Arts in Mathematics at Occidental College. I
-                        am fascinated
-                        how
-                        math surrounds us in
-                        everything we do, especially in the intersection to computer science. My coursework is focused
-                        in
-                        applied and computational mathematics.</p>
-                </div>
-                <div class="highlightInfo col-xl-3 align-self-start">
-                    <h3><span><i class="fa fa-database"></i></span>Data Science</h3>
-                    <hr>
-                    <p class="highlightText">I want to continue building my mathematical and computational acumen by
-                        pursuing a career in the
-                        field of data science. Processing, interpreting and communicating data correctly can influence
-                        big
-                        business decisions. I plan to eventually pursue a graduate degree in this subject.</p>
-                </div>
-                <div class="highlightInfo col-xl-3 align-self-start">
-                    <h3><span><i class="fa fa-heart"></i></span>Health & Fitness</h3>
-                    <hr>
-                    <p class="highlightText">In addition to Mathematics, I am also a double major in Kinesiology. Being
-                        a
-                        former student athlete,
-                        I was drawn to the subject based on how applicable it was to my life. I am intrigued by the
-                        inner
-                        workings of the human body and have a deep knowledge of biomechancis, human anatomy and
-                        physiology.
-                    </p>
+
+        <div class="container-fluid" id="projectHighlights">
+            <div class="container">
+                <div class="row align-items-center subHeadingLine">
+                    <h1>Project Highlights</h1>
                 </div>
             </div>
+
+            <section class="container">
+                <div class="row display-flex align-items-center" id="highlights">
+                    <div class="highlightInfo col-xl-5 align-self-start">
+                        <h3>"Optimized Conversion of Categorical and Numerical Features in Machine
+                            Learning Models"</h3>
+                        <hr>
+                        <p class="highlightText">While some data have an explicit, numerical form, many other data,
+                            such as gender or nationality, do not typically use numbers and are referred to as
+                            categorical
+                            data. Thus, machine learning algorithms need a way of representing categorical information
+                            numerically in order to be able to analyze them. Our project specifically focuses on
+                            optimizing
+                            the conversion of categorical features to a numerical form in order to maximize the
+                            effectiveness of various machine learning models. Of the methods we used, we found that Wide
+                            &
+                            Deep is the most effective model for datasets that contain high-cardinality features, as
+                            opposed
+                            to learned embedding and one-hot encoding.
+                        </p>
+                        <span class="highlightProjectLinks" id="firstHighlight"> <a class="highlightLinkPDF"
+                                href="/pdfs/PIC Math 2020 Research Paper.pdf"><i class="fa fa-file"></i> PDF</a>
+                            <a class="highlightLinkGIT" href="https://github.com/tombutler36/categoricalEncoding"> <i
+                                    class="fa fa-github"></i> Github</a>
+                        </span>
+                    </div>
+                    <div class="highlightInfo col-xl-5 align-self-start">
+                        <h3>"Utilizing Mathematical Modeling Techniques to Optimize
+                            Athletic Footwear for Sports Performance"</h3>
+                        <hr>
+                        <p class="highlightText">This paper will analyze the application of mathematical models onto
+                            biomechanical systems, specifically running gait mechanics and the foot/ground interaction,
+                            as
+                            well as its application to long distance running footwear and sports performance. A
+                            literature
+                            review was conducted by collecting research articles through Science Direct, Web of Science
+                            and
+                            Pub Med. The purpose of this research was to highlight the process of mathematical modeling
+                            and
+                            how it can be applied to human dynamics to improve performance. Multiple models are analyzed
+                            that incorporate different aspects of gait mechanics, including simulating dampening of
+                            shoes
+                            and the spring like effect of the arch of the foot and the metatarsophalangeal joint. Many
+                            breakthroughs have already been made in this field, but what this paper brings is the
+                            connection
+                            between the theory and the application and how these models can show which factors influence
+                            performance the most. What is concluded is that these highlighted factors do lead to
+                            improved
+                            sports performance specifically when looking at the Nike Vaporfly 4% running shoe and both
+                            men’s
+                            and women’s world record marathon time.
+                        </p>
+                        <span class="highlightProjectLinks"><a class="highlightLinkPDF"
+                                href="/pdfs/Oxy Kinesiology Comprehensive Paper.pdf"><i class="fa fa-file"></i>
+                                PDF</a></span>
+                    </div>
+                </div>
+            </section>
+            <div class="row" id="bottombtnrow">
+                <a href="#portfolioPage" class="btn btn-lg" id="nextPageBtn">See My Portfolio <i
+                        class="fa fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- About Section -->
+
+
+        <div class="container" id="aboutMe">
+            <div class="row">
+                <div class="container aboutBanner">
+                    <h1>About Me</h1>
+                    <h4>A snapshot of who I am and what I do,</h4>
+                    <h4>Connect with me!</h4>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row aboutSnapshot">
+                    <div class="col-xl-7">
+                        <img src="/images/personalPic2.jpg" alt="" id="aboutHeadshot">
+                    </div>
+                    <div class="aboutInfo col-xl-4">
+                        <div class="card infoCard">
+                            <div class="card-header aboutCardHeader">
+                                <h5 class="headerName">Tom Butler</h5>
+                                <p class="headerSub">Student</p>
+                            </div>
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button id="noHighlight" class="accordion-button cardSubSection" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                            aria-expanded="false" aria-controls="flush-collapseOne"
+                                            onclick="this.blur();">
+                                            <i class="fa fa-user cardIcons"></i> Bio
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <div class="row ">
+                                                <div class="col aboutBioContent">
+                                                    <span class="displayBlock bioSubInfo">Age:</span>
+                                                    <span class="displayBlockBig">22</span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col aboutBioContent">
+                                                    <span class="displayBlock bioSubInfo">Hometown:</span>
+                                                    <img src="/images/seattle.png" alt="" class="circleImage">
+                                                    <span class="bioSubText displayBlock ">Seattle, WA</span>
+                                                </div>
+                                                <div class="col aboutBioContent">
+                                                    <span class="displayBlock bioSubInfo">Current Location:</span>
+                                                    <img src="/images/laSkyline.png" alt="" class="circleImage">
+                                                    <span class="bioSubText displayBlock ">Los Angeles, CA</span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col aboutBioContent">
+                                                    <span class="displayBlock bioSubInfo">
+                                                        Goals:
+                                                    </span>
+                                                    <ul class="bioSubText">
+                                                        <li>Learn something new everyday</li>
+                                                        <li>Attend graduate school</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button id="noHighlight" class="accordion-button collapsed cardSubSection"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                            aria-expanded="false" aria-controls="flush-collapseTwo"
+                                            onclick="this.blur();">
+                                            <i class="fa fa-graduation-cap cardIcons"></i> Education
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <p class="educationHeader"><img src="/images/oxyLogo.png" alt=""
+                                                        class="circleImageSmall"> Occidental College</p>
+                                            </div>
+                                            <div class="row ">
+                                                <p class="educationSubHeader">(2016 - 2021)</p>
+                                            </div>
+                                            <div class="row">
+                                                <ul class="educationDetails">
+                                                    <li><i>Degrees:</i> BA Mathematics, BA Kinesiology</li>
+                                                    <li><i>Focus of Study:</i> Applied and Computational Mathematics,
+                                                        Biomechanics</li>
+                                                    <li><i>Awards:</i> Deans List (2017-2021), Kinesiology Department
+                                                        Ambassador</li>
+                                                    <li><i>Involvement:</i>Varsity Baseball: Player (2016-2020), Team Captain (2019-2020), Assistant Pitching Coach (2020-2021)  </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingThree">
+                                        <button id="noHighlight" class="accordion-button collapsed cardSubSection"
+                                            type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                            aria-controls="flush-collapseThree" onclick="this.blur();">
+                                            <i class="fa fa-briefcase cardIcons"></i> Work Experience
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <ul class="cardDetails">
+                                                <li>
+                                                    Operations Research Intern
+                                                </li>
+                                                <li>
+                                                    Mathematics TA (Linear Algebra, Partial Differential Equations)
+                                                </li>
+                                                <li>
+                                                    Human Anatomy and Biomechanics Tutor
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingFour">
+                                        <button id="noHighlight" class="accordion-button collapsed cardSubSection"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                                            aria-expanded="false" aria-controls="flush-collapseFour"
+                                            onclick="this.blur();">
+                                            <i class="fa fa-bullseye cardIcons"></i> Hobbies
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <ul class="cardDetails">
+                                                <li>
+                                                    Lifting
+                                                </li>
+                                                <li>
+                                                    Surfing
+                                                </li>
+                                                <li>
+                                                    Computers
+                                                </li>
+                                                <li>
+                                                    Gaming
+                                                </li>
+                                                <li>
+                                                    Sports
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="card-footer aboutFooter">
+                                <a href="/pdfs/Tom Butler Resume.pdf" class="btn btn-lg" id="aboutResumeButton"
+                                    onclick="this.blur();" download="Tom Butler Resume"><span class="fa fa-file"></span>
+                                    Full Resume</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- portfolio section -->
+
+    <div class="container-fluid" id="portfolioPage">
+        <div class="container">
+            <div class="row align-items-center subHeadingLine">
+                <h1>Full Portfolio</h1>
+            </div>
+        </div>
+        <section class="container">
+            <div class="row">
+                <h1 class="portfolioHeaders">Undergraduate Research Projects</h1>
+
+                <div id="accordion1">
+                    <div class="card">
+                        <div class="card-header accordianBackground" id="headingOne1">
+                            <h5 class="mb-0">
+                                <button class="btn btn-light collapsed portfolioAccordianButton accordianBackground"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="true"
+                                    aria-controls="collapseOne" onclick="this.blur();">
+                                    <span class="projectHeaderText"><i class="fa fa-angle-right"></i> Optimized
+                                        Conversion
+                                        of Categorical and Numerical Features in Machine Learning Models</span>
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne1" class="collapse" aria-labelledby="headingOne" data-parent="#accordion1">
+                            <div class="card-body">
+                                <span>Co-Authored, <a href="/pdfs/PIC Math 2020 Research Paper.pdf">PDF</a>, Code: <a
+                                        href="https://github.com/tombutler36/categoricalEncoding">GitHub</a></span>
+                                <p>
+                                    <span class="projectSummary">Summary:</span> While some data have an explicit,
+                                    numerical
+                                    form, many other data, such as gender
+                                    or nationality, do not typically use numbers and are referred to as categorical
+                                    data.
+                                    Thus, machine learning algorithms need a way of representing categorical information
+                                    numerically in order to be able to analyze them. Our project specifically focuses on
+                                    optimizing the conversion of categorical features to a numerical form in order to
+                                    maximize
+                                    the effectiveness of various machine learning models. Of the methods we used, we
+                                    found
+                                    that Wide & Deep is the most effective model for datasets that contain
+                                    high-cardinality
+                                    features, as opposed to learned embedding and one-hot encoding.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header accordianBackground" id="headingTwo1">
+                            <h5 class="mb-0">
+                                <button class="btn btn-light portfolioAccordianButton accordianBackground"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo1" aria-expanded="false"
+                                    aria-controls="collapseTwo" onclick="this.blur();">
+                                    <span class="projectHeaderText"><i class="fa fa-angle-right"></i> Utilizing
+                                        Mathematical Modeling to Optimize Athletic Footwear for Sports
+                                        Performance</span>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo1" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion1">
+                            <div class="card-body">
+                                <span>Authored, <a href="/pdfs/Oxy Kinesiology Comprehensive Paper.pdf">PDF</a></span>
+                                <p>
+                                    <span class="projectSummary">Summary:</span> This paper will analyze the application
+                                    of
+                                    mathematical models onto biomechanical
+                                    systems,
+                                    specifically running gait mechanics and the foot/ground interaction, as well as its
+                                    application to
+                                    long distance running footwear and sports performance. A literature review was
+                                    conducted
+                                    by
+                                    collecting research articles through Science Direct, Web of Science and Pub Med. The
+                                    purpose
+                                    of this research was to highlight the process of mathematical modeling and how it
+                                    can be
+                                    applied
+                                    to human dynamics to improve performance. Multiple models are analyzed that
+                                    incorporate
+                                    different aspects of gait mechanics, including simulating dampening of shoes and the
+                                    spring
+                                    like
+                                    effect of the arch of the foot and the metatarsophalangeal joint. Many breakthroughs
+                                    have
+                                    already been made in this field, but what this paper brings is the connection
+                                    between
+                                    the
+                                    theory
+                                    and the application and how these models can show which factors influence
+                                    performance
+                                    the
+                                    most. What is concluded is that these highlighted factors do lead to improved sports
+                                    performance
+                                    specifically when looking at the Nike Vaporfly 4% running shoe and both men’s and
+                                    women’s
+                                    world record marathon time.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header accordianBackground" id="headingThree1">
+                            <h5 class="mb-0">
+                                <button class="btn btn-light portfolioAccordianButton accordianBackground"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree1" aria-expanded="false"
+                                    aria-controls="collapseThree" onclick="this.blur();">
+                                    <span class="projectHeaderText"><i class="fa fa-angle-right chevrons"></i> Modeling
+                                        Head
+                                        Impacts
+                                        to Improve Understanding of the Mechanics of Traumatic Brain Injury in
+                                        Sport</span>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree1" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordion1">
+                            <div class="card-body">
+                                <span>Authored, <a
+                                        href="/pdfs/Independent Study Biomechanics Final Paper.pdf">PDF</a></span>
+                                <p>
+                                    <span class="projectSummary">Summary:</span> Traumatic brain injury is one of many
+                                    types
+                                    head injuries that occurs in sports, but it
+                                    is
+                                    also one of the most dangerous due to the possible long-term consequences on brain
+                                    function.
+                                    This has prompted sporting leagues such as the NFL and the UFC to alter rules and
+                                    invest
+                                    large
+                                    amount of money into further research to increase the safety of its athletes. Our
+                                    knowledge
+                                    of
+                                    brain injuries is slowly evolving because of the complexity and the vast inner
+                                    mechanisms of
+                                    neural tissue. In this paper I will evaluate how impact location, kinetics and
+                                    interface
+                                    with the
+                                    head/headgear change the rotational and linear kinematics of the head in two
+                                    specific
+                                    sports:
+                                    American football and Boxing/Mixed Martial arts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header accordianBackground" id="headingFour1">
+                            <h5 class="mb-0">
+                                <button class="btn btn-light accordianBackground" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour1" aria-expanded="false" aria-controls="collapseFour"
+                                    onclick="this.blur();">
+                                    <span class="projectHeaderText"><i class="fa fa-angle-right"></i> Biomechanics of
+                                        UCL
+                                        Tears and Tommy John surgery in MLB pitchers</span>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseFour1" class="collapse" aria-labelledby="headingFour"
+                            data-parent="#accordion1">
+                            <div class="card-body">
+                                <h4>Authored, <a href="/pdfs/KINE302 Biomechanics Research Paper.pdf">PDF</a></h4>
+                                <p>
+                                    <span class="projectSummary">Summary:</span> Major League Baseball pitchers have
+                                    been
+                                    becoming bigger and stronger with the
+                                    average height and weight of MLB pitchers increasing from 6’1” 189 pounds in 1955 to
+                                    6’3”
+                                    205
+                                    pounds in 2014 (12). Since Major League Baseball has begun recording velocities of
+                                    pitches
+                                    with their Statcast data tracker, the average fastball velocity of pitchers has
+                                    increased
+                                    from 90.9
+                                    MPH in 2006 to 93.5 in 2016 with a record high of 106 MPH being clocked in during
+                                    the
+                                    2010
+                                    season by Aroldis Chapman. This has coincided with a sharp increase in the amount of
+                                    Tommy
+                                    John Surgeries performed. The number of pitchers who have received this procedure
+                                    has
+                                    grown
+                                    immensely from the first
+                                    surgery in 1974 to 2003 when approximately 1 in
+                                    9 MLB pitchers had received Tommy John to today when officially 26.2% of MLB
+                                    pitchers,
+                                    or a
+                                    little more than 1 in 4 have had their UCL reconstructed. These trends pose the
+                                    question,
+                                    what about pitching puts players at such high risk for UCL tears and does the
+                                    reconstruction
+                                    surgery enhance the pitchers elbow from a biomechanical perspective?
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row" id="bottomProjectSet">
+                    <h1 class="portfolioHeaders">Personal Projects</h1>
+                    <div id="accordion2">
+                        <div class="card">
+                            <div class="card-header accordianBackground" id="headingOne2">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-light accordianBackground" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne"
+                                        onclick="this.blur();">
+                                        <span class="projectHeaderText"><i class="fa fa-angle-right"></i> Web
+                                            Development</span>
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne2" class="collapse" aria-labelledby="headingOne"
+                                data-parent="#accordion2">
+                                <div class="card-body">
+                                    <ul>
+                                        <li> - This Website, Code: <a
+                                                href="https://github.com/tombutler36/personalPortfolioSite">GitHub</a>
+                                        </li>
+                                        <li> - More to come soon</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header accordianBackground" id="headingTwo2">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-light accordianBackground" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo"
+                                        onclick="this.blur();">
+                                        <span class="projectHeaderText"><i class="fa fa-angle-right"></i> Data
+                                            Science</span>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo2" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordion2">
+                                <div class="card-body">
+                                    <ul>
+                                        <li> - "Optimized Conversion of Categorical and Numerical Features in Machine
+                                            Learning Models", <a href="/pdfs/PIC Math 2020 Research Paper.pdf">PDF</a>,
+                                            Code: <a
+                                                href="https://github.com/tombutler36/categoricalEncoding">GitHub</a>
+                                        </li>
+                                        <li> - More to come soon</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header accordianBackground" id="headingThree2">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-light accordianBackground" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree2" aria-expanded="false"
+                                        aria-controls="collapseThree" onclick="this.blur();">
+                                        <span class="projectHeaderText"><i class="fa fa-angle-right"></i>
+                                            Miscellanious</span>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree2" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordion2">
+                                <div class="card-body">
+                                    <ul>
+                                        <li> - Sports Betting: Kelly Critereon resource management using max heap data
+                                            structure. Code: <a
+                                                href="https://github.com/tombutler36/kellyCritereon">GitHub</a>
+                                        </li>
+                                        <li> - Partial Differential Equations: Using the explicit finite difference
+                                            method
+                                            to numerically approximate the 1D heat equation. Code: <a
+                                                href="https://github.com/tombutler36/numericalHeatPDE">GitHub</a>
+
+                                        </li>
+                                        <li> - More to come soon
+
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
         </section>
 
+    </div>
+    <div class="container-fluid" id="contactMe">
+        <div class="container">
+            <div class="row align-items-center subHeadingLine contactPageHeader">
+                <h1>Contact</h1>
+            </div>
+        </div>
 
-        <div class="row" id="bottombtnrow">
-            <a href="/about.html" class="btn btn-lg" id="nextPageBtn">Learn More <i class="fa fa-arrow-right"></i></a>
+        <h2 class="contactPageSubHeader">Send me a message and I will get back to you as soon as I can!</h2>
+
+        <div class="container" id="mainContactContent">
+            <div class="row">
+                <div class="col-lg-6 order-2 order-lg-1">
+                    <section class="container" id="contactForm">
+
+                        <form method="POST" action="https://formspree.io/f/myybanrw" id="formContent">
+                            <div class="row">
+                                <div class="col-md-6 inputSpace">
+                                    <label for="firstName">Name</label>
+                                    <input type="text" class="form-control" id="firstName" placeholder="John Doe"
+                                        name="name" required>
+                                </div>
+                                <div class="col-md-6 inputSpace">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Email@gmail.com"
+                                        name="email" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col inputSpace">
+                                    <label for="email">Subject</label>
+                                    <input type="text" class="form-control" id="subject" placeholder="Contact"
+                                        name="subject" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col inputSpace">
+                                    <label for="message">Leave a Messege</label>
+                                    <textarea name="message" id="message" cols="30" rows="10" class="form-control"
+                                        placeholder="Type Here" name="message" required></textarea>
+                                </div>
+                            </div>
+
+                            <button type="submit" value="Send" class="btn">Send</button>
+                        </form>
+                    </section>
+                </div>
+                <div class="col-lg-6 contactRightBox order-1 order-lg-2">
+                    <div class="container-fluid" id="contactInfoRight">
+                        <img src="/images/tbLogo2.png" alt="">
+                        <span><i class="fa fa-map-marker"></i> Los Angeles, California</span>
+                        <span> <a href="mailto:tombutler368@gmail.com"><i class="fa fa-envelope"></i>
+                                tombutler368@gmail.com</a></span>
+                        <hr>
+                        <ul class="social-icons" id="contactPageSocialList">
+                            <li>
+                                <a href="https://www.facebook.com/thomas.butler.7568" class="social-icon"><i
+                                        class="fa fa-facebook fa-xx" id="contactPageFB"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/tom_butler23/" class="social-icon"><i
+                                        class="fa fa-instagram" id="contactPageIG"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/tom-butler1/" class="social-icon"><i
+                                        class="fa fa-linkedin" id="contactPageLinkd"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/tombutler36" class="social-icon"><i class="fa fa-github"
+                                        id="contactPageGit"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
 
-    <div class="container-fluid" id="projectHighlights">
-        <div class="container">
-            <div class="row align-items-center" id="highlightHeading">
-                <h1>Project Highlights</h1>
-            </div>
-        </div>
-
-        <section class="container">
-            <div class="row display-flex align-items-center" id="highlights">
-                <div class="highlightInfo col-xl-5 align-self-start">
-                    <h3>"Optimized Conversion of Categorical and Numerical Features in Machine
-                        Learning Models"</h3>
-                    <hr>
-                    <p class="highlightText">While some data have an explicit, numerical form, many other data,
-                        such as gender or nationality, do not typically use numbers and are referred to as categorical
-                        data. Thus, machine learning algorithms need a way of representing categorical information
-                        numerically in order to be able to analyze them. Our project specifically focuses on optimizing
-                        the conversion of categorical features to a numerical form in order to maximize the
-                        effectiveness of various machine learning models. Of the methods we used, we found that Wide &
-                        Deep is the most effective model for datasets that contain high-cardinality features, as opposed
-                        to learned embedding and one-hot encoding.
-                    </p>
-                    <span class="highlightProjectLinks" id="firstHighlight"> <a class="highlightLinkPDF"
-                            href="/pdfs/PIC Math 2020 Research Paper.pdf"><i class="fa fa-file"></i> PDF</a>
-                        <a class="highlightLinkGIT" href="https://github.com/tombutler36/categoricalEncoding"> <i
-                                class="fa fa-github"></i> Github</a>
-                    </span>
-                </div>
-                <div class="highlightInfo col-xl-5 align-self-start">
-                    <h3>"Utilizing Mathematical Modeling Techniques to Optimize
-                        Athletic Footwear for Sports Performance"</h3>
-                    <hr>
-                    <p class="highlightText">This paper will analyze the application of mathematical models onto
-                        biomechanical systems, specifically running gait mechanics and the foot/ground interaction, as
-                        well as its application to long distance running footwear and sports performance. A literature
-                        review was conducted by collecting research articles through Science Direct, Web of Science and
-                        Pub Med. The purpose of this research was to highlight the process of mathematical modeling and
-                        how it can be applied to human dynamics to improve performance. Multiple models are analyzed
-                        that incorporate different aspects of gait mechanics, including simulating dampening of shoes
-                        and the spring like effect of the arch of the foot and the metatarsophalangeal joint. Many
-                        breakthroughs have already been made in this field, but what this paper brings is the connection
-                        between the theory and the application and how these models can show which factors influence
-                        performance the most. What is concluded is that these highlighted factors do lead to improved
-                        sports performance specifically when looking at the Nike Vaporfly 4% running shoe and both men’s
-                        and women’s world record marathon time.
-                    </p>
-                    <span class="highlightProjectLinks"><a class="highlightLinkPDF"
-                            href="/pdfs/Oxy Kinesiology Comprehensive Paper.pdf"><i class="fa fa-file"></i>
-                            PDF</a></span>
-                </div>
-            </div>
-        </section>
-        <div class="row" id="bottombtnrow">
-            <a href="/portfolio.html" class="btn btn-lg" id="nextPageBtn">See My Portfolio <i
-                    class="fa fa-arrow-right"></i></a>
-        </div>
     </div>
-
-
 
     <!-- social media/linked in connect and bottom nav -->
 
@@ -238,12 +803,18 @@
 
     <!-- bottom nav with info of who made website -->
     <footer>
-        <span>Website made by Tom Butler | Icons from Font Awesome | Hope you enjoy!</span>
+        <span>Website designed and built by Tom Butler | Icons from Font Awesome | Hope you enjoy!</span>
     </footer>
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
+
+    <script src="/app.js"></script>
 </body>
 
 </html>
